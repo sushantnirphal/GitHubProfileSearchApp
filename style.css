@@ -1,0 +1,123 @@
+  @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html,body{
+    font-family: 'Oswald', sans-serif; 
+    font-size:62.5% ;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.search{
+    display: flex;
+    width: 50%;
+    max-width: 600px;
+}
+.search input{
+    padding:0.5rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px  0  0 5px;
+    
+   
+}
+.search input:focus-visible{
+    border: none;
+    outline: 1px solid purple;
+    
+}
+
+.primary-btn{
+    cursor: pointer;
+background:purple ;
+color: white;
+padding:0.5rem 1rem;
+border: none;
+border-radius: 0 5px 5px 0;
+}
+.primary-btn:hover{
+background:rgb(143, 63, 143);
+
+}
+.primary-btn:active{
+background:rgb(22, 20, 22);
+}
+
+/* profile-box */
+#profileContainer{
+    width: 100%;
+}
+
+.profile-box{
+    margin: auto;
+      padding:4rem ;
+      box-shadow: 0 0 1rem rgba(0,0,0,0.5) ;
+      width: 90%;
+      max-width: 600px;
+      margin: 2rem auto;
+      transition:.5s ease-in ;
+}
+.profile-box:hover{
+    transform: rotate(-2deg) scale(1.01);
+    transition:.5s ease-in ;
+
+}
+.topsection button{
+    align-self: center;
+}
+
+.topsection{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.left h1{
+    font-size: 1.6rem;
+}
+
+.avtar{
+    height: 10rem;
+    width: 10rem;
+    
+    
+}
+.avtar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; 
+}
+
+.about{
+    margin: 2rem;
+}
+.status{
+    display: grid;
+    margin: 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(10rem ,1fr));
+}
+.status-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
